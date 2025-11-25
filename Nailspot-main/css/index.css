@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, #fff6fa, #f7f8ff);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #fdd7e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 60px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+}
+
+.nome-logo {
+    color: #e26ca5;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+/*Footer ou Rodape*/
+.rodape {
+    background-color: #fdd7e2;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #ccc;
+}
+
+/*Conteudo*/
+.container {
+    flex: 1;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.descricao {
+    color: #666;
+    margin: 5px 0 30px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.botao {
+    width: 250px;
+    padding: 14px 0;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.botao.rosa {
+    background-color: #f9a9cc;
+    color: #fff;
+    border: none;
+}
+
+.botao.rosa:hover {
+    background-color: #f28bb3;
+}
+
+.botao.branco {
+    background-color: #fff;
+    border: 2px solid #f9a9cc;
+    color: #333;
+}
+
+.botao.branco:hover {
+    background-color: #fce4ef;
+}
+
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .conteudo h1 {
+        font-size: 1.8rem;
+    }
+
+    .botao {
+        width: 200px;
+    }
+}
